@@ -7,3 +7,18 @@ def map(array)
   end
   new
 end
+
+def reduce(array, sv=nil)
+  if sv
+    num = sv
+    i = 0
+  else 
+    num = array[0]
+    i = 1
+  end
+  while i < array.length
+  num = yield(array[i])
+  i += 1
+end
+num
+end
