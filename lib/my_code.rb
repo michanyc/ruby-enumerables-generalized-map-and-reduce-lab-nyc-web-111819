@@ -2,7 +2,7 @@
 def map(array)
   new = []
   index = 0
-  while index < s.lenght
+  while index < array.lenght
     new << yield(array[index])
     index += 1
   end
